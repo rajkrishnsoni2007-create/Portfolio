@@ -1,0 +1,213 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  color: #1a2744;
+  background-color: #f7f9fc;
+}
+
+header,
+#weather {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+#cityInput {
+  padding: 10px;
+  width: 65%;
+  border: 1px solid #c5d0e0;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #1a2744;
+}
+
+#cityInput:focus {
+  outline: 2px solid #c9a227;
+  outline-offset: 1px;
+  border-color: #1e4d8c;
+}
+
+#weatherButton {
+  padding: 10px 16px;
+  cursor: pointer;
+  border: 1px solid #1e4d8c;
+  border-radius: 4px;
+  background-color: #1e4d8c;
+  color: #ffffff;
+}
+
+#weatherButton:hover,
+#weatherButton:focus {
+  background-color: #163a6b;
+  border-color: #c9a227;
+}
+
+#weatherResult {
+  margin-top: 20px;
+}
+
+main,
+footer {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+header {
+  padding-top: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #c9a227;
+}
+
+h1 {
+  margin: 0 0 0.4rem;
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #12305f;
+}
+
+.tagline {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+  font-size: 1.05rem;
+  color: #4a5f80;
+}
+
+.dark-mode {
+  background-color: #0d1b33;
+  color: #f4f7fb;
+}
+
+.dark-mode h1 {
+  color: #f4f7fb;
+}
+
+.dark-mode h2 {
+  color: #d4af37;
+}
+
+.dark-mode .tagline,
+.dark-mode footer {
+  color: #c5d0e0;
+}
+
+.dark-mode a {
+  color: #d4af37;
+}
+
+.dark-mode a:hover,
+.dark-mode a:focus {
+  color: #f0d77a;
+}
+
+.dark-mode header {
+  border-bottom-color: #d4af37;
+}
+
+.dark-mode footer {
+  border-top-color: #2a4060;
+}
+
+.dark-mode #cityInput {
+  background-color: #132742;
+  border-color: #2a4060;
+  color: #f4f7fb;
+}
+
+.dark-mode #weatherButton,
+.dark-mode #themeToggle {
+  background-color: #d4af37;
+  border-color: #d4af37;
+  color: #0d1b33;
+}
+
+.dark-mode #weatherButton:hover,
+.dark-mode #weatherButton:focus,
+.dark-mode #themeToggle:hover,
+.dark-mode #themeToggle:focus {
+  background-color: #f0d77a;
+  border-color: #f0d77a;
+}
+
+main {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+section {
+  margin-bottom: 2.25rem;
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1.35rem;
+  color: #1e4d8c;
+  letter-spacing: 0.02em;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #1e4d8c;
+  text-decoration: underline;
+}
+a:hover { 
+    text-decoration: underline;
+    transform: scale(1.02); 
+}
+
+a:hover,
+a:focus {
+  color: #c9a227;
+}
+
+footer {
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+  border-top: 1px solid #c9a227;
+  font-family: system-ui, -apple-system, Segoe UI, sans-serif;
+  font-size: 0.95rem;
+  color: #4a5f80;
+}
+
+footer p {
+  margin: 0;
+}
+
+#themeToggle {
+  display: block;
+  margin: 0 auto 2.5rem;
+  padding: 10px 16px;
+  cursor: pointer;
+  border: 1px solid #c9a227;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #12305f;
+}
+
+#themeToggle:hover,
+#themeToggle:focus {
+  background-color: #12305f;
+  color: #ffffff;
+  border-color: #12305f;
+}
