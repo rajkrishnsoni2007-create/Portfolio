@@ -8,20 +8,27 @@
 </head>
 <body>
   <header>
-    <h1>Raj krishn soni</h1>
+    <h1>Raj Krishn Soni</h1>
     <p class="tagline">Cloud Computing Engineer</p>
+    <p class="contact-line">
+      Jaipur, Rajasthan
+      <span class="sep" aria-hidden="true">|</span>
+      <a href="mailto:sonirajkrishn2007@gmail.com">sonirajkrishn2007@gmail.com</a>
+      <span class="sep" aria-hidden="true">|</span>
+      <a href="https://www.linkedin.com/in/raj-krishn-soni-999a3237b">LinkedIn</a>
+      <span class="sep" aria-hidden="true">|</span>
+      <a href="https://github.com/rajkrishnsoni2007-create">GitHub</a>
+    </p>
   </header>
 
   <main>
     <section id="about" aria-labelledby="about-heading">
       <h2 id="about-heading">About</h2>
       <p>
-        PLACEHOLDER: Write a short introduction about yourself. Include your background,
-        what you enjoy working on, and what you are looking for next.
+        Hello! I am Raj Krishn Soni, a passionate Computer Science and Engineering student at JECRC University, Jaipur. 
       </p>
       <p>
-        PLACEHOLDER: Add a second paragraph with location, education, or a personal interest
-        if you want visitors to know you better.
+        I am interested in software development, programming, and solving real-world problems through technology. I enjoy building practical projects, exploring emerging technologies, and continuously improving my problem-solving abilities. My goal is to become a skilled software developer, create innovative solutions, and contribute to meaningful projects that make a positive impact.
       </p>
     </section>
 
@@ -29,30 +36,103 @@
       <h2 id="skills-heading">Skills</h2>
       <ul>
         <li>Python</li>
-        <li>PLACEHOLDER: Skill two (for example CSS)</li>
-        <li>PLACEHOLDER: Skill three (for example JavaScript)</li>
-        <li>PLACEHOLDER: Skill four (for example Git)</li>
-        <li>PLACEHOLDER: Skill five (for example Communication)</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+        <li>Communication</li>
       </ul>
     </section>
 
     <section id="projects" aria-labelledby="projects-heading">
       <h2 id="projects-heading">Projects</h2>
-      <ul>
-        <li>
-          <a href="https://PLACEHOLDER-project-one.example">PLACEHOLDER: Project One Title</a>
-          — PLACEHOLDER: One-sentence description of project one.
+      <label class="search-label" for="projectSearch">Search projects by name or technology</label>
+      <input
+        type="search"
+        id="projectSearch"
+        placeholder="Try Quiz, Book, Python, JavaScript…"
+        autocomplete="off"
+      >
+      <p id="projectSearchStatus" class="search-status" aria-live="polite"></p>
+      <ul id="projectList">
+        <li data-tech="html css javascript python">
+          <a href="https://github.com/rajkrishnsoni2007-create/Interactive-Quiz-Application">Interactive Quiz Application</a>
+          — Interactive Quiz Application: A web application that allows users to take quizzes on various topics.
+          <span class="project-tech">Technologies: HTML, CSS, JavaScript, Python</span>
         </li>
-        <li>
-          <a href="https://PLACEHOLDER-project-two.example">PLACEHOLDER: Project Two Title</a>
-          — PLACEHOLDER: One-sentence description of project two.
+        <li data-tech="html css javascript python">
+          <a href="https://github.com/rajkrishnsoni2007-create/reading_list.git">Book Reading List Application</a>
+          — Book Reading List Application: A web application that allows users to add books to their reading list and track their progress.
+          <span class="project-tech">Technologies: HTML, CSS, JavaScript, Python</span>
         </li>
-        <li>
-          <a href="https://PLACEHOLDER-project-three.example">PLACEHOLDER: Project Three Title</a>
-          — PLACEHOLDER: One-sentence description of project three.
+        <li data-tech="javascript cursor ai python">
+          <a href="https://PLACEHOLDER-project-three.example">Bug Fixing Using Cursor AI</a>
+          — Bug Fixing Using Cursor AI: A web application that allows users to fix bugs in their code using Cursor AI.
+          <span class="project-tech">Technologies: JavaScript, Cursor AI, Python</span>
         </li>
       </ul>
     </section>
+
+      <!-- Floating chatbot button -->
+      <button
+        type="button"
+        id="chatToggle"
+        class="chat-toggle"
+        aria-label="Open portfolio chatbot"
+        aria-controls="chatWidget"
+        aria-expanded="false"
+      >
+        <span aria-hidden="true">✦</span>
+        <span class="chat-toggle-text">Chat with me</span>
+      </button>
+
+      <!-- Floating chatbot window -->
+      <section
+        id="chatWidget"
+        class="chat-widget"
+        aria-label="Portfolio AI chatbot"
+        hidden
+      >
+        <div class="chat-header">
+          <div>
+            <strong>Portfolio Assistant</strong>
+            <span class="chat-subtitle">Ask me about my portfolio</span>
+          </div>
+          <button 
+            type="button" 
+            id="chatClose" 
+            class="chat-close" 
+            aria-label="Close chatbot"
+          >×</button>
+        </div>
+
+        <div id="chatLog" class="chat-log" role="log" aria-live="polite">
+          <p class="chat-bubble assistant">
+            Hi! I'm Raj's portfolio assistant. Ask me about my skills or projects.
+          </p>
+        </div>
+
+        <div class="chat-examples">
+          <button type="button" class="chat-example">Who are you?</button>
+          <button type="button" class="chat-example">What are your skills?</button>
+          <button type="button" class="chat-example">What projects have you completed?</button>
+          <button type="button" class="chat-example">Where is your GitHub?</button>
+        </div>
+
+        <form id="chatForm" class="chat-form">
+          <label class="search-label" for="chatInput">Your question</label>
+          <div class="chat-row">
+            <input
+              type="text"
+              id="chatInput"
+              maxlength="500"
+              placeholder="Ask a question..."
+              autocomplete="off"
+              required
+            >
+            <button type="submit" id="chatSend">Send</button>
+          </div>
+        </form>
+      </section>
   </main>
   <section id="weather">
     <h2>Weather</h2>
@@ -73,7 +153,7 @@
 </section>
 
   <footer>
-    <p>PLACEHOLDER: Contact email or preferred way to get in touch</p>
+    <p>Raj Krishn Soni — Cloud Computing Engineer</p>
   </footer>
   <button id="themeToggle">Switch to Dark Mode</button>
   <script src="script.js"></script>
