@@ -100,7 +100,7 @@ footer,
 header {
   padding-top: 3rem;
   padding-bottom: 1.5rem;
-  border-bottom: 2px solid #c9a227;
+  border-bottom: none;
 }
 
 h1 {
@@ -658,5 +658,76 @@ footer p {
     bottom: 78px;
     width: calc(100vw - 24px);
     height: min(560px, calc(100dvh - 100px));
+  }
+}
+
+/* Professional hero layout */
+header.hero {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border-bottom: 2px solid #c9a227;
+}
+
+.hero-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-label {
+  margin: 0 0 0.6rem;
+  color: #9a7915;
+  font: 600 0.75rem/1.5 system-ui, sans-serif;
+  letter-spacing: 0.12em;
+}
+
+.hero-content h1 {
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  line-height: 1.15;
+  margin-bottom: 0.6rem;
+}
+
+.hero-image {
+  flex-shrink: 0;
+}
+
+.profile-photo {
+  display: block;
+  width: 125px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 12px;
+  border: 2px solid #c9a227;
+  box-shadow: 0 8px 22px rgba(18, 48, 95, 0.12);
+}
+
+.hero .contact-line {
+  line-height: 2;
+}
+
+/* Keep the hero responsive on mobile */
+@media (max-width: 520px) {
+  header.hero {
+      gap: 1rem;
+      padding-top: 2rem;
+  }
+
+  .profile-photo {
+      width: 90px;
+      height: 110px;
+  }
+
+  .hero-content h1 {
+      font-size: 1.8rem;
+      overflow-wrap: anywhere;
+  }
+
+  .hero .contact-line .sep {
+      margin: 0 0.2rem;
   }
 }
