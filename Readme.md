@@ -1,6 +1,6 @@
 # Raj Krishn Soni — Personal Portfolio
 
-A professional personal portfolio website showcasing my background, technical skills, projects, and interests as a Computer Science and Engineering student at JECRC University, Jaipur. The website also features an AI-powered chatbot that helps visitors learn more about my profile and projects.
+A professional personal portfolio website showcasing my background, technical skills, projects, and interests as a Computer Science and Engineering student at JECRC University, Jaipur. The website also features an AI-powered chatbot that helps visitors learn more about my profile and projects. 
 
 ## 🌐 Live Website
 
